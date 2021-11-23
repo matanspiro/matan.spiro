@@ -1,17 +1,26 @@
 #GridContainer {
     display: grid;
     grid-template-areas: 
-    'header header header header header'
-    'left left center center center'
+    'pic header header header header'
+    'button left center center center'
     'bottom bottom bottom bottom bottom'
     ;
+}
+
+.pic {
+    grid-area: pic;
+    width: 20%;
+}
+
+.button {
+    grid-area: button;
 }
 
 .header {
     grid-area: header; 
     width: 100%;
     background-color: blue;
-    height: 20vh;
+    height: 80vh;
     color: white;
     text-align: center;
 }
